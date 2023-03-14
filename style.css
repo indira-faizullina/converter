@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.container {
+  max-width: 1400px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  flex: 2;
+  text-align: center;
+  margin: 0 auto;
+  height: 50%;
+}
+
+.box__logo {
+  flex: 1;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  line-height: 100vh;
+  padding: 0 20px;
+}
+
+.box__logo img {
+  width: 50%;
+}
+
+.box__photo {
+  margin: 0 auto;
+}
+
+.box__photo img {
+  width: 100%;
+  border: 3px solid #d3d3d3;
+  border-radius: 50%;
+  box-shadow: 4px 3px 15px #fade65b0;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #fade65;
+  text-shadow: 1px 0 1px black, 0 1px 1px black, -1px 0 1px black,
+    0 -1px 1px black;
+  box-shadow: 2px 2px 2px #fade65b0;
+  background-color: #00da77;
+  outline: none;
+  cursor: pointer;
+  flex: 4;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #fade65;
+  text-shadow: 1px 0 1px black, 0 1px 1px black, -1px 0 1px black,
+    0 -1px 1px black;
+  cursor: pointer;
+  flex: 1;
+}
+
+.first {
+  text-align: end;
+}
+
+.second {
+  text-align: start;
+}
+
+.first-label {
+  padding: 6px 0 6px 15px;
+}
+
+.second-label {
+  padding: 6px 15px 6px 0;
+}
+
+@media screen and (max-width: 970px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .box {
+    text-align: center;
+    margin: 30px;
+    height: auto;
+  }
+
+  .box__logo {
+    line-height: normal;
+    height: auto;
+    width: 150px;
+    padding: 20px;
+  }
+
+  .box__photo img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: block;
+    text-align: center;
+  }
+}
