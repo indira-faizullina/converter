@@ -1,2 +1,2 @@
 # converter
-converter js
+Just a funny Fahrenheit-Celsius converter. The functionality will be updated.
