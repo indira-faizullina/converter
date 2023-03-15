@@ -23,23 +23,10 @@ body {
 }
 
 .box {
-  flex: 2;
-  text-align: center;
-  margin: 0 auto;
-  height: 50%;
-}
-
-.box__logo {
   flex: 1;
   text-align: center;
-  margin: 0 auto;
-  height: 100%;
-  line-height: 100vh;
-  padding: 0 20px;
-}
-
-.box__logo img {
-  width: 50%;
+  margin: 0 50px;
+  height: 50%;
 }
 
 .box__photo {
@@ -55,7 +42,7 @@ body {
 }
 
 form {
-  display: flex;
+  padding-bottom: 15px;
 }
 
 input {
@@ -74,10 +61,10 @@ input {
   background-color: #00da77;
   outline: none;
   cursor: pointer;
-  flex: 4;
 }
 
 label {
+  display: block;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -86,26 +73,10 @@ label {
   text-shadow: 1px 0 1px black, 0 1px 1px black, -1px 0 1px black,
     0 -1px 1px black;
   cursor: pointer;
-  flex: 1;
+  padding: 6px 15px;
 }
 
-.first {
-  text-align: end;
-}
-
-.second {
-  text-align: start;
-}
-
-.first-label {
-  padding: 6px 0 6px 15px;
-}
-
-.second-label {
-  padding: 6px 15px 6px 0;
-}
-
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 900px) {
   body {
     overflow: auto;
   }
@@ -120,20 +91,8 @@ label {
     height: auto;
   }
 
-  .box__logo {
-    line-height: normal;
-    height: auto;
-    width: 150px;
-    padding: 20px;
-  }
-
   .box__photo img {
     width: 200px;
     margin-bottom: 20px;
-  }
-
-  form {
-    display: block;
-    text-align: center;
   }
 }
