@@ -1,2 +1,2 @@
-# converter
-Just a funny Fahrenheit-Celsius converter. The functionality will be updated.
+# temperature converter
+Just a funny Fahrenheit-Celsius-Kelvin converter.
